@@ -1,0 +1,37 @@
+research_task:
+  description: >
+    Today's date is {current_date}. Research {company}, a UK-listed company, using your search tool.
+    Find what the company does, its most recent published financial results,
+    recent news from the last twelve months, and its main risks or uncertainties.
+    UK listed companies publish results in a cycle: full-year results, a first-quarter
+    trading update, interim (half-year) results and a third-quarter trading update.
+    Run separate searches for each, for example "{company} latest results {current_year}",
+    "{company} interim results {current_year}" and "{company} trading update {current_year}".
+    Compare the publication dates and report the headline figures and outlook from the
+    announcement with the most recent date.
+    State whether figures are at actual or constant exchange rates, and whether they
+    are adjusted or statutory. Give the publication date of every source and prefer the
+    company's own announcements.
+    Only report facts you found in search results. If a figure or claim cannot be
+    confirmed by a search result, say that it could not be confirmed.
+  expected_output: >
+    A list of 10 bullet points with the most relevant verified facts about {company}.
+    Each bullet must be short and specific, state the date of its source, and end with the URL.
+    At least three bullets must come from the last twelve months.
+    Mark anything uncertain as unconfirmed.
+  agent: researcher
+
+reporting_task:
+  description: >
+    Using only the research you were given, write a balanced company brief on {company}.
+    Include both encouraging and concerning facts. When sources give different figures
+    or guidance, use the most recent one and say which date it is from.
+    Do not recommend buying, selling or holding the shares and do not predict prices.
+    Do not add facts that were not found.
+  expected_output: >
+    A one-page brief in markdown with these sections:
+    Company overview, Latest results, Recent news, Risks and uncertainties,
+    What a reader might look into next, and Sources (the URLs from the research).
+    End with this line: "This is research for learning purposes, not investment advice."
+    Formatted as markdown without '```'
+  agent: reporting_analyst
