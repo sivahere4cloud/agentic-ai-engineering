@@ -1,17 +1,24 @@
 research_task:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is {current_year}.
+    Research {company} for a candidate applying for a {role} position.
+    Use your search tool to find what the company does, its main products or services,
+    its technology, recent news and anything relevant to a {role}.
+    Focus on information that is current as of {current_year}.
+    Only report facts you found in search results. If something cannot be confirmed
+    by a search result, say that it could not be confirmed.
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
+    A list of 10 bullet points with the most relevant verified facts about {company}.
+    Each bullet must be short and specific and end with the URL of the page it came from.
+    Mark anything uncertain as unconfirmed.
   agent: researcher
 
 reporting_task:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    Using the research you were given, write an interview briefing for a {role} interview at {company}.
+    Use only facts from the research. Do not add anything that was not found.
   expected_output: >
-    A fully fledged report with the main topics, each with a full section of information.
+    A one-page briefing in markdown, with these sections:
+    Company overview, Why this role matters here, Five likely interview questions,
+    Three smart questions to ask the interviewer, and Sources (the URLs from the research).
     Formatted as markdown without '```'
   agent: reporting_analyst
