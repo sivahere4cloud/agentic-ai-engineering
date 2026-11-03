@@ -1,0 +1,8 @@
+**1. Redundancy under existing UK data protection law**  
+A blanket disclosure mandate is unnecessary. UK GDPR (Article 22) and the Data Protection Act 2018 already regulate solely automated decision-making, guaranteeing candidates rights to explanation and human intervention where significant decisions occur. Imposing an additional layer of disclosure risks generating meaningless boilerplate disclaimers, confusing candidates without providing substantive protection.
+
+**2. Disproportionate regulatory burdens on British businesses**  
+The UK’s established approach to AI governance prioritises a pro-innovation, context-specific framework over rigid statutory mandates. Defining where simple recruitment software ends and "AI" begins creates severe legal ambiguity. A mandatory disclosure rule imposes disproportionate compliance costs and liability risks on British employers—particularly SMEs—deterring the adoption of productivity-enhancing tools that can actually help standardise hiring and remove human bias.
+
+**3. Incentivising the "gaming" of recruitment and harming meritocracy**  
+Mandatory disclosure inadvertently degrades the fairness of recruitment. Flagging the precise presence and nature of automated screening encourages candidates to reverse-engineer and "game" systems using keyword-stuffing techniques, rather than presenting authentic qualifications. This advantages individuals with the technical literacy or resources to exploit algorithmic vulnerabilities, penalising honest applicants and depriving employers of genuine merit-based assessment.
