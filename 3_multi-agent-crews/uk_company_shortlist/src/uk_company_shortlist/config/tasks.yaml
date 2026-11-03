@@ -1,0 +1,37 @@
+find_companies:
+  description: >
+    Today's date is {current_date}. Use your search tool to find up to three UK-listed
+    companies in the {sector} sector that have been in the news in recent weeks.
+    For each one, say why it is in the news. Only name companies you found in search results.
+  expected_output: >
+    Up to three companies. For each: the company name, its stock market ticker if you
+    found it, a one-sentence reason it is in the news, the date of the source and the URL.
+  agent: trending_company_finder
+
+research_companies:
+  description: >
+    Today's date is {current_date}. For each company found in the previous step,
+    use your search tool to research its most recent published results announcement
+    (full-year, interim or trading update, whichever is latest), its outlook or guidance,
+    recent news from the last twelve months, and its main risks.
+    State whether figures are adjusted or statutory and at actual or constant rates.
+    Only report facts found in search results. If something cannot be confirmed, say so.
+  expected_output: >
+    For each company: five short bullet points of verified facts, each with the date of its
+    source and the URL, plus one line on its main uncertainty. Mark anything unconfirmed.
+  agent: financial_researcher
+  context:
+    - find_companies
+
+pick_best:
+  description: >
+    From the researched companies, choose the single one most worth studying further
+    and explain why, using only facts from the research. Say what could argue against
+    the choice. Do not recommend buying or selling shares and do not predict prices.
+  expected_output: >
+    A short markdown note with these sections: Chosen company, Why it is worth studying,
+    What could argue against it, and Sources (the URLs from the research).
+    End with this line: "This is research for learning purposes, not investment advice."
+  agent: shortlist_analyst
+  context:
+    - research_companies

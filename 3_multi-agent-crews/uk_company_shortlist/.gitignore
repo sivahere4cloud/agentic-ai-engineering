@@ -1,0 +1,6 @@
+.env
+__pycache__/
+.DS_Store
+shortlist.md
+companies.json
+research.json
