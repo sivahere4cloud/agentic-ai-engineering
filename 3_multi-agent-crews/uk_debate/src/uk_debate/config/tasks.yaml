@@ -1,0 +1,39 @@
+propose:
+  description: >
+    You are arguing IN FAVOUR of the motion: {motion}.
+    This is a debate exercise, so argue this side as persuasively as you can,
+    even if you would not personally hold the view.
+    Give your three strongest points, each with a short justification.
+    Keep it relevant to the United Kingdom and do not invent statistics.
+  expected_output: >
+    A clear, concise argument in favour of the motion, in three numbered points,
+    under 250 words.
+  agent: debater
+
+oppose:
+  description: >
+    You are arguing AGAINST the motion: {motion}.
+    This is a debate exercise, so argue this side as persuasively as you can,
+    even if you would not personally hold the view.
+    Give your three strongest points, each with a short justification.
+    Keep it relevant to the United Kingdom and do not invent statistics.
+  expected_output: >
+    A clear, concise argument against the motion, in three numbered points,
+    under 250 words.
+  agent: debater
+
+decide:
+  description: >
+    Review the arguments for and against the motion: {motion}.
+    Summarise the strongest point on each side, then say which side was better
+    supported by its argument and why. Be clear about what remains contested
+    or unproven. Judge only the arguments presented, not your own views,
+    and do not take a political side.
+  expected_output: >
+    A short verdict in markdown with these sections:
+    Strongest point for, Strongest point against, Which side was better supported,
+    and What remains contested.
+  agent: judge
+  context:
+    - propose
+    - oppose

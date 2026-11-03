@@ -1,0 +1,5 @@
+1. **Upholding the Equality Act 2010:** AI hiring tools trained on historical recruitment data risk embedding systemic biases against protected characteristics. Without mandatory disclosure, rejected applicants cannot identify or challenge indirect discrimination, rendering established UK anti-discrimination protections functionally unenforceable against opaque algorithms.
+
+2. **Enforcing UK GDPR Rights:** Under the Data Protection Act 2018 and UK GDPR, citizens hold explicit rights regarding automated decision-making, including the right to meaningful information and human intervention. Mandatory disclosure is the necessary prerequisite for this framework; candidates cannot exercise statutory rights if they are kept in the dark about an algorithm's involvement.
+
+3. **Promoting Market Accountability:** Requiring disclosure deters the covert adoption of unverified recruitment tools, such as unproven facial-analysis or sentiment software. Transparency compels employers to conduct rigorous vendor due diligence, protecting job seekers from junk science while reinforcing the UK’s goal to champion responsible, trustworthy AI governance.
