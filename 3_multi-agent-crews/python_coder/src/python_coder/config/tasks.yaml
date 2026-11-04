@@ -1,17 +1,9 @@
-research_task:
+coding_task:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is {current_year}.
+    Write Python code to solve this assignment: {assignment}
+    Run the code and check the output is correct. If it fails or gives a wrong answer,
+    fix it and run it again. Only finish once you have seen it run successfully.
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
-  agent: researcher
-
-reporting_task:
-  description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
-  expected_output: >
-    A fully fledged report with the main topics, each with a full section of information.
-    Formatted as markdown without '```'
-  agent: reporting_analyst
+    The final working Python code in a single code block, followed by the exact output
+    it produced when you ran it, and one sentence on what the code does.
+  agent: coder

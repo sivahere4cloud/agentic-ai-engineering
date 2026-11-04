@@ -18,8 +18,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs',
-        'current_year': str(datetime.now().year)
+        'assignment': "Write code that prints the current date and time, the Python version, and the SHA-256 hash of the text 'siva-test-123'. Run it and report the exact output."
     }
 
     try:
